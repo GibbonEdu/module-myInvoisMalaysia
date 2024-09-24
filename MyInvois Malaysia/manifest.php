@@ -25,7 +25,7 @@ $description = 'A module for passing Gibbon invoicing information to Mayalsia\'s
 $entryURL    = "settings_manage.php";   
 $type        = "Additional";  
 $category    = 'Other';            
-$version     = '0.1.00';            
+$version     = '0.1.01';            
 $author      = 'Gibbon Foundation';
 $url         = 'http://gibbonedu.org';
 

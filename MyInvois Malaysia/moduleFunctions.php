@@ -17,3 +17,12 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+function getURL($installationType = 'Production') {
+
+    $installationType = ($installationType != 'Production' && $installationType != 'Sandbox') ? 'Production' : $installationType;
+
+    $url = ($installationType == 'Production') ? 'api.myinvois.hasil.gov.my' : 'preprod-api.myinvois.hasil.gov.my';
+
+    return $url;
+}
+
