@@ -13,3 +13,8 @@ $sql[$count][1] = "-- First version, nothing to update";
 $count++;
 $sql[$count][0] = "0.1.01";
 $sql[$count][1] = "";
+
+// v0.1.02
+$count++;
+$sql[$count][0] = "0.1.02";
+$sql[$count][1] = "";

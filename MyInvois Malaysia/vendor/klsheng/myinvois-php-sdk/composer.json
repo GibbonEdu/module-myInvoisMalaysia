@@ -1,0 +1,45 @@
+{
+    "name": "klsheng/myinvois-php-sdk",
+    "description": "MyInvois SDK for PHP",
+    "keywords": [
+        "php",
+        "myinvois",
+        "lhdn",
+        "irbm",
+        "malaysia"
+    ],
+    "homepage": "https://github.com/klsheng/myinvois-php-sdk",
+    "license": "MIT",
+    "authors": [
+         {
+            "name": "Sean Kau",
+            "email": "kliensheng2020@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "~7.0|~6.0|~5.0|~4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "sabre/xml": "^4.0",
+        "psr/http-client": "^1.0 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8|~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Klsheng\\Myinvois\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Klsheng\\Myinvois\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "gibbonedu/core",
+    "description": "A module for passing Gibbon invoicing information to Mayalsia's MyInvois platform, via their API.",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Gibbon Foundation",
+            "email": "support@gibbonedu.org"
+        }
+    ],
+    "require": {
+        "klsheng/myinvois-php-sdk": "*"
+    }
+}

@@ -1,5 +1,10 @@
 CHANGELOG
 =========
+v0.1.02
+-------
+Removed getURL function
+Added klsheng's myinvois-php-sdk
+
 v0.1.01
 -------
 Added getURL function
