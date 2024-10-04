@@ -39,12 +39,19 @@ use Klsheng\Myinvois\MyInvoisClient;
     // GET SET UP FOR MYINVOIS
     $prodMode = ($settingGateway->getSettingByScope('MyInvois Malaysia', 'installationType') == 'Production') ? true : false;
     $clientID = $settingGateway->getSettingByScope('MyInvois Malaysia', 'clientID');
-    $clientSecret = $settingGateway->getSettingByScope('MyInvois Malaysia', 'clientSecret');
+    $clientSecret = $settingGateway->getSettingByScope('MyInvois Malaysia', 'clientSecret1');
 
     $client = new MyInvoisClient($clientID, $clientSecret, $prodMode);
 
     $client->login();
-    echo $access_token = $client->getAccessToken();
+    $accessToken = $client->getAccessToken();
+
+    // QUERY AND PRINT DOCUMENT TYPES
+    $documentTypes = $client->getAllDocumentTypes()["result"];
+    
+    foreach ($documentTypes as $documentType) {
+        echo $documentType["description"]."<br/>";
+    }
 
     // Continue with https://github.com/klsheng/myinvois-php-sdk
 
